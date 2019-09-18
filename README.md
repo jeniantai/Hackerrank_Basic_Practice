@@ -6,34 +6,48 @@ In this challenge, we review some basic concepts that will get you started with 
 ## Task 
 Consider a list (list = []). You can perform the following commands:
 
-```pythoninsert``` i e: Insert integer  at position .
-print: Print the list.
-remove e: Delete the first occurrence of integer .
-append e: Insert integer  at the end of the list.
-sort: Sort the list.
-pop: Pop the last element from the list.
-reverse: Reverse the list.
+```insert``` i e: Insert integer  at position .
+```print```: Print the list.
+```remove```: Delete the first occurrence of integer .
+```append```: Insert integer  at the end of the list.
+```sort```: Sort the list.
+```pop```: Pop the last element from the list.
+```reverse```: Reverse the list.
+
+Initialize your list and read in the value of  followed by  lines of commands where each command will be of the  types listed above. Iterate through each command in order and perform the corresponding operation on your list.
 
 ### Input Format
 
-A single line of text denoting **_inputString_** (the variable whose contents must be printed).
+The first line contains an integer, , denoting the number of commands.
+Each line  of the  subsequent lines contains one of the commands described above
+
+### Constraints
+
+The elements added to the list must be integers.
 
 ### Output Format
 
-Print **Hello, World.** on the first line, and the contents of **_inputString_** on the second line.
+For each command of type print, print the list on a new line.
 
 ### Sample Input
 ```python
-Welcome to 30 Days of Code!
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
 ```
 ### Sample Output
 ```python
-Hello, World. 
-Welcome to 30 Days of Code!
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]
 ```
-
-### Explanation
-
-On the first line, we print the string literal **Hello, World.**. On the second line, we print the contents of the  variable **_inputString_** which, for this sample case, happens to be **Welcome to 30 Days of Code!**.
-
-If you do not print the variable's contents to stdout, you will not pass the hidden test case.
