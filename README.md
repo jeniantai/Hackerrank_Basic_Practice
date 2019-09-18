@@ -6,7 +6,7 @@ In this challenge, we review some basic concepts that will get you started with 
 ## Task 
 Consider a list (list = []). You can perform the following commands:
 
-insert i e: Insert integer  at position .
+```pythoninsert``` i e: Insert integer  at position .
 print: Print the list.
 remove e: Delete the first occurrence of integer .
 append e: Insert integer  at the end of the list.
